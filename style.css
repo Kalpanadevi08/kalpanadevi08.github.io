@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Poppins, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #0f172a, #020617);
+    color: #e5e7eb;
+}
+.top-profile {
+    text-align: center;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.profile-img {
+    width: 350x;          /* slightly bigger */
+    height: 350px;
+    border-radius: 50%;
+    border: 4px solid #6366f1;
+    box-shadow: 0 15px 35px rgba(99,102,241,0.6);
+    margin: 0 auto 20px;   /* centers the image */
+    display: block;        /* required for centering */
+}
+
+.top-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 14px 32px;          /* bigger button */
+    border-radius: 30px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;             /* makes text bigger */
+    box-shadow: 0 10px 25px rgba(99,102,241,0.5);
+}
+
+.top-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 35px rgba(99,102,241,0.7);
+}
+
+
+/* CONTENT */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* GLASS CARD */
+.glass {
+    background: rgba(255,255,255,0.06);
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 35px;
+}
+
+/* ABOUT */
+.about-me p {
+    margin-bottom: 14px;
+    line-height: 1.8;
+}
+
+.about-me strong {
+    color: #c7d2fe;
+}
+
+/* PROJECTS */
+.project-card {
+    background: rgba(0,0,0,0.35);
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+}
+
+.project-card a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ===== PROJECT COLOR THEMES ===== */
+
+/* DeepTrace – Drug Detection (Red / Orange) */
+.project-deeptrace {
+    border-left: 6px solid #ef4444;
+    background: linear-gradient(
+        135deg,
+        rgba(239, 68, 68, 0.12),
+        rgba(255, 255, 255, 0.04)
+    );
+}
+
+/* Smart Fridge – IoT (Green / Teal) */
+.project-fridge {
+    border-left: 6px solid #22c55e;
+    background: linear-gradient(
+        135deg,
+        rgba(34, 197, 94, 0.12),
+        rgba(255, 255, 255, 0.04)
+    );
+}
+
+/* AI Navigation – AI / Tech (Blue / Purple) */
+.project-navigation {
+    border-left: 6px solid #6366f1;
+    background: linear-gradient(
+        135deg,
+        rgba(99, 102, 241, 0.12),
+        rgba(255, 255, 255, 0.04)
+    );
+}
+
+.project-deeptrace h1,
+.project-deeptrace h2 {
+    color: #fecaca;
+}
+
+.project-fridge h1,
+.project-fridge h2 {
+    color: #bbf7d0;
+}
+
+.project-navigation h1,
+.project-navigation h2 {
+    color: #c7d2fe;
+}
+
+/* ===== FORCE PROJECT BACKGROUND COLORS ===== */
+
+/* DeepTrace – RED THEME */
+.project-deeptrace {
+    background-color: #3b0d0d !important;
+    border: 2px solid #ef4444;
+}
+
+/* Smart Fridge – GREEN THEME */
+.project-fridge {
+    background-color: #0f3d2e !important;
+    border: 2px solid #22c55e;
+}
+
+/* AI Navigation – BLUE THEME */
+.project-navigation {
+    background-color: #0b163f !important;
+    border: 2px solid #6366f1;
+}
+ 
+
+ 
+.ieee {
+    border-left: 5px solid #f472b6;
+}
+
+.ongoing {
+     border-left: 5px solid #f472b6;
+}
+.sih {
+     border-left: 5px solid #22d3ee;
+}
+.naac {
+      border-left: 5px solid #22d3ee;
+}
+.iot {
+     border-left: 5px solid #f472b6;
+}
+
+/* ===== SINGLE OUTPUT IMAGE STYLE (NO DESIGN CHANGE) ===== */
+
+.single-output {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+
+/* CERTIFICATIONS */
+
+
+.clean-cert {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.cert-card-clean {
+    background: linear-gradient(145deg, #020617, #111827);
+    border-radius: 18px;
+    padding: 28px 22px;
+    text-decoration: none;
+    color: #e5e7eb;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card-clean:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(99,102,241,0.45);
+}
+
+.cert-icon {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 14px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    box-shadow: 0 10px 22px rgba(99,102,241,0.6);
+}
+
+.cert-card-clean h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #e0e7ff;
+}
+
+.cert-card-clean p {
+    font-size: 14px;
+    color: #c7d2fe;
+    opacity: 0.9;
+}
+
+/* ===== PROJECT PAGE STYLES ===== */
+
+.output-container {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.output-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+.badge {
+    display: inline-block;
+    margin: 8px 0 14px;
+    padding: 5px 12px;
+    font-size: 12px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #ffffff;
+}
+
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255,255,255,0.06);
+    margin-top: 60px;
+}
+
+.footer-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: #ffffff;
+}
+
+.footer-links {
+    margin-bottom: 14px;
+}
+
+.footer-links a {
+    margin: 0 14px;
+    color: #ffffff;        /* SAME COLOR FOR ALL */
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.footer-links a:hover {
+    color: #a5b4fc;        /* SAME HOVER FOR ALL */
+}
+
+.footer-copy {
+    font-size: 13px;
+    opacity: 0.75;
+    color: #ffffff;
+}
+
